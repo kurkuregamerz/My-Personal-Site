@@ -1,17 +1,97 @@
-:root{
-    --theme-background-color: rgb(9, 11, 15);
-    --theme-accent-color:#38e6fd;
+:root {
+  --theme-background-color: rgb(255, 255, 255);
+  --theme-secondary_color: rgb(255, 174, 0);
+  --theme-accent-color: #000000;
 }
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-#main{
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--theme-background-color);
+.no-transition {
+  transition: none !important;
 }
-#main_header{
+#main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--theme-background-color);
+  overflow-y: auto;
+  scrollbar-color: var(--theme-accent-color);
+}
+#hero_section_main {
+  width: 100%;
+  height: 90%;
+  background: #ff6549;
+  background: linear-gradient(
+    180deg,
+    #000000ee 47%,
+    rgb(19, 19, 19) 91%,
+    rgb(32, 32, 32) 100%
+  );
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 100%;
+  box-shadow: 0 10px 10px -5px rgba(49, 49, 49, 0.308);
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 90vh) {
+  #hero_section_main {
+    height: 30em;
+  }
+}
+#owners_image_hero_section {
+  height: 100%;
+  grid-column: 2;
+  position: relative;
+  top: 300px;
+  transition: cubic-bezier();
+  filter: drop-shadow(-10px 10px 10px #ffffff);
+  z-index: 1000;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  animation-duration: 1.5s;
+  animation-timeline: view;
+  animation-name: owners_image_hero_section_animation;
+  animation-fill-mode: forwards;
+  animation-range: entry 0% entry 100%;
+}
+#owners_name_hero_section {
+  color: #ffffff;
+  grid-column: 2;
+  z-index: 10;
+  grid-row: 1;
+  text-align: center;
+  text-align-last: center;
+  position: relative;
+  font-size:20vmax;
+  top: -300px;
+  width: 100%;
+  animation-duration: 1.5s;
+  animation-timeline: view;
+  animation-name: owners_name_hero_section_animation;
+  animation-fill-mode: forwards;
+  animation-range: entry 0% entry 100%;
+}
+
+@keyframes owners_image_hero_section_animation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-300px);
+  }
+}
+@keyframes owners_name_hero_section_animation {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(300px);
+  }
+}
+/* #main_header{
     width: 100%;
     height: 20%;
     max-height: 4em;
@@ -21,4 +101,4 @@
 #navbar_main{
     height: 80%;
     box-shadow: 1px 1px 10px var(--theme-accent-color);
-}
+} */
