@@ -9,15 +9,15 @@
 }
 @font-face {
   font-family: valorant;
-  src: url(./fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
+  src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
 }
 @font-face {
   font-family: google_sans;
-  src: url(src/assets/fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+  src: url(../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
 }
 @font-face {
   font-family: monserrat;
-  src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 .no-transition {
   transition: none !important;
