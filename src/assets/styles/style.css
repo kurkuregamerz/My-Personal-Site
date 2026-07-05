@@ -7,6 +7,18 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: valorant;
+  src: url(/src/assets/fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
+}
+@font-face {
+  font-family: google_sans;
+  src: url(/src/assets/fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+@font-face {
+  font-family: monserrat;
+  src: url(/src/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
 .no-transition {
   transition: none !important;
 }
@@ -17,78 +29,211 @@
   overflow-y: auto;
   scrollbar-color: var(--theme-accent-color);
 }
+#navbar_main {
+  grid-row: 1;
+  position: relative;
+  top: -300px;
+  background-color: transparent;
+  height: 10%;
+  display: flex;
+  grid-column: 1/5;
+  justify-content: center;
+  align-items:baseline;
+  animation-duration: 1s;
+  animation-timeline: view;
+  animation-name: navbar_main_reveal_animation;
+  animation-fill-mode: forwards;
+  animation-range: entry 0% entry 100%;
+  animation-delay: 0.2s;
+  
+}
+#navbar_main ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: google_Sans;
+  font-weight: 500;
+  column-gap: 10vw;
+  align-items: center;
+  font-size: 1.2vmax;
+}
+#navbar_main ul a {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: google_Sans;
+  font-weight: 500;
+  column-gap: 10vw;
+  align-items: center;
+  font-size: 1.2vmax;
+  text-decoration: none;
+}
+#navbar_logo_text {
+  font-size: 1.5vmax;
+  font-weight: 500;
+}
 #hero_section_main {
   width: 100%;
-  height: 90%;
-  background: #ff6549;
+  height: 99%;
+
   background: linear-gradient(
-    180deg,
-    #000000ee 47%,
-    rgb(19, 19, 19) 91%,
-    rgb(32, 32, 32) 100%
+    100deg,
+    #c03701ee 47%,
+    rgb(212, 70, 0) 91%,
+    rgb(219, 90, 0) 100%
   );
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 100%;
   box-shadow: 0 10px 10px -5px rgba(49, 49, 49, 0.308);
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  overflow: hidden;
 }
-@media screen and (max-width: 90vh) {
+@media screen and (orientation: portrait) {
   #hero_section_main {
-    height: 30em;
+    height: 40%;
   }
+}
+#background_table_herosection {
+  outline: 09px solid white;
+  table-layout: fixed;
+  grid-row: 1/5;
+  grid-column: 1/4;
+  height: 110%;
+  width: 110%;
+  justify-self: center;
+  z-index: 0;
+}
+
+#background_table_herosection td {
+  outline: 0.1px rgba(255, 255, 255, 0.308);
+  outline-style:solid;
+  z-index: 10;
 }
 #owners_image_hero_section {
   height: 100%;
   grid-column: 2;
   position: relative;
-  top: 300px;
+  top: 20px;
   transition: cubic-bezier();
-  filter: drop-shadow(-10px 10px 10px #ffffff);
-  z-index: 1000;
-  grid-row: 1;
+  z-index: 150;
+  grid-row: 2/5;
   align-self: center;
   justify-self: center;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timeline: view;
   animation-name: owners_image_hero_section_animation;
   animation-fill-mode: forwards;
   animation-range: entry 0% entry 100%;
 }
-#owners_name_hero_section {
-  color: #ffffff;
+#owners_transparentname_hero_section {
+  color: #fdcdcd2d;
   grid-column: 2;
-  z-index: 10;
-  grid-row: 1;
+  z-index: 100;
+  grid-row: 2;
   text-align: center;
   text-align-last: center;
   position: relative;
-  font-size:20vmax;
-  top: -300px;
+  font-size: 20vmax;
   width: 100%;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
+  animation-timeline: view;
+  animation-name: owners_transparentname_hero_section_animation;
+  animation-fill-mode: forwards;
+  animation-range: entry 0% entry 100%;
+  font-family: valorant;
+}
+#owners_name_hero_section {
+  color: white;
+  font-family: valorant;
+  grid-row: 4;
+  grid-column: 2;
+  font-size: 10vmax;
+  z-index: 200;
+  justify-self: left;
+  margin-left: 2vmax;
+  animation-duration: 1s;
   animation-timeline: view;
   animation-name: owners_name_hero_section_animation;
   animation-fill-mode: forwards;
   animation-range: entry 0% entry 100%;
+  font-family: monserrat;
+  font-weight: 900;
+  
 }
+/* #owner_contact_card_herosection{
+  grid-row: 3;
+  grid-column: 2/4;
+  justify-self: right;
+  height: 5vmax;
+  width:10vmax ;
+   z-index: 150;
+   background-color: #272727;
+   border-radius: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   margin-right: 2vmax;
+  max-width: max-content;
+   
+} */
 
+/* #contact_type_icon_herosection_contact_card{
+  height:100%;
+  grid-column: 1/2;
+  grid-row: 1;
+  background-color: transparent;
+  border-radius: inherit;
+  justify-content: center;
+ 
+}
+#text_owners_contact_hero_sec{
+  color: rgb(255, 255, 255);
+  font-family: google_sans;
+} */
+@keyframes navbar_main_reveal_animation {
+  from {
+    top: -300px;
+  }
+  to {
+    top: 0px;
+  }
+}
 @keyframes owners_image_hero_section_animation {
   from {
     transform: translateY(0px);
+    filter: blur(20px);
+    filter: opacity(0%);
   }
   to {
-    transform: translateY(-300px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes owners_transparentname_hero_section_animation {
+  from {
+    transform: scale(0.8);
+    filter: blur(20px);
+    opacity: 0%;
+  }
+  to {
+    transform: scale(1);
+    opcity: 100%;
   }
 }
 @keyframes owners_name_hero_section_animation {
   from {
-    transform: translateY(0px);
+    opacity: 0%;
+    filter: blur(10px);
+    transform: scale(1.2);
   }
   to {
-    transform: translateY(300px);
+    opacity: 100%;
+    transform: scale(1);
   }
 }
 /* #main_header{
