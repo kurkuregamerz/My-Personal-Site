@@ -101,7 +101,7 @@
   transition-duration: 0.5s;
   display: flex;
   justify-self: center;
-  transform-origin: 1vmax;
+  transform-origin: 35%;
 }
 #hero_section_main {
   width: 100%;
