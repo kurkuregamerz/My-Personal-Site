@@ -6,6 +6,10 @@ export function navbar_creator() {
                     <li class="navbar_navigation_buttons" id="navbar_about_navigation_button"><a href="/src/pages/about_page.html">About</a></li>
                     <li class="navbar_navigation_buttons" id="navbar_services_navigation_button"><a href="/src/pages/services_page.html">Services</a></li>
                     <li class="navbar_navigation_buttons" id="navbar_contact_navigation_button"><a href="/src/pages/contact_page.html">Contact</a></li>
+                    <li class="navbar_navigation_buttons" id="navbar_navigation_menu_button">
+                    <div class="navbar_menu_button_lines"id="navbar_menu_button_line1"></div>
+                    <div class="navbar_menu_button_lines"id="navbar_menu_button_line2"></div>
+                    </li>
                 </ul>
             </nav>`;
 }
