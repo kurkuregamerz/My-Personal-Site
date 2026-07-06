@@ -6,6 +6,7 @@ const owners_image_hero_section = document.getElementById("owners_image_hero_sec
 const owners_transparentname_hero_section = document.getElementById("owners_transparentname_hero_section")
 hero_section_main.innerHTML += navbar_creator();
 
+const dropdown_menu_navbar = document.getElementById("dropdown_menu_navbar")
 const navbar_navigation_menu_button = document.getElementById("navbar_navigation_menu_button");
 const navbar_about_navigation_button_line1 = document.getElementById("navbar_menu_button_line1")
 const navbar_about_navigation_button_line2 = document.getElementById("navbar_menu_button_line2")
@@ -15,11 +16,14 @@ navbar_navigation_menu_button.addEventListener("click", () => {
     if (navbar_navigation_menu_button_click_count == 0) {
         navbar_about_navigation_button_line1.style.transform = `rotate(120deg)`;
         navbar_about_navigation_button_line2.style.transform = `rotate(-120deg)`;
+         dropdown_menu_navbar.style.height = "100%";
         navbar_navigation_menu_button_click_count = 1;
     }
     else {
         navbar_about_navigation_button_line1.style.transform = `rotate(0deg)`;
         navbar_about_navigation_button_line2.style.transform = `rotate(0deg)`;
+        dropdown_menu_navbar.style.height = "0%";
         navbar_navigation_menu_button_click_count = 0
+
     }
 })
