@@ -39,12 +39,13 @@
   position: relative;
   top: -300px;
   background-color: transparent;
-  height: 10%;
+  height: 100%;
   display: flex;
   grid-column: 1/6;
   z-index: 1000;
   justify-content: center;
-  align-items:baseline;
+  align-self: center;
+  align-items:center;
   animation-duration: 1s;
   animation-timeline: view;
   animation-name: navbar_main_reveal_animation;
@@ -121,7 +122,7 @@
   grid-template-columns:1fr 1fr 1fr;
   justify-content: center;
   transition: linear;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
 
  
 }
