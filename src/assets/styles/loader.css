@@ -8,7 +8,8 @@
   flex-wrap: wrap;
   width: var(--total-size);
   height: var(--total-size);
-
+  justify-self: center;
+  align-self: center;
 }
 
 .cell {
