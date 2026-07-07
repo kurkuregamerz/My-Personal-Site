@@ -1,5 +1,4 @@
-export function loader() {
-    return  `<div id="loader">
+document.body.innerHTML += `<div id="loader">
   <div class="cell d-0"></div>
   <div class="cell d-1"></div>
   <div class="cell d-2"></div>
@@ -17,5 +16,10 @@ export function loader() {
   
   
 </div>
-   `
-}
+   `;
+const loader_main = document.getElementById("loader");
+const main = document.getElementById("main");
+window.addEventListener("load", () => {
+  loader_main.style.display = "none";
+  main.style.display = "block";
+});

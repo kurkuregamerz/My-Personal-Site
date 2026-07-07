@@ -39,9 +39,10 @@
   background-color: var(--theme-background-color);
   overflow-y: auto;
   scrollbar-color: var(--theme-accent-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
+}
+#loader{
+  display: block;
 }
 #navbar_main {
   grid-row: 1;
