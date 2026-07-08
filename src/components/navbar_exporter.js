@@ -67,7 +67,7 @@ export function navbar_creator() {
             </nav>
            `;
 }
-export const css_file_link = `<link rel="stylesheet" href="/src/assets/styles/navbar_style.css">`;
+export const css_file_link = `<link rel="stylesheet" href="../assets/styles/navbar_style.css">`;
 
 
 
