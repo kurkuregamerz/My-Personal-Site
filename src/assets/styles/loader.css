@@ -1,93 +1,21 @@
-/* From Uiverse.io by alexruix */ 
-#loader {
-  --cell-size: 52px;
-  --cell-spacing: 1px;
-  --cells: 3;
-  --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
-  display: flex;
-  flex-wrap: wrap;
-  width: var(--total-size);
-  height: var(--total-size);
-  justify-self: center;
-  align-self: center;
-}
-
-.cell {
-  flex: 0 0 var(--cell-size);
-  margin: var(--cell-spacing);
-  background-color: transparent;
-  box-sizing: border-box;
-  border-radius: 4px;
-  animation: 1.5s ripple ease infinite;
-}
-
-.cell.d-1 {
-  animation-delay: 100ms;
-}
-
-.cell.d-2 {
-  animation-delay: 200ms;
-}
-
-.cell.d-3 {
-  animation-delay: 300ms;
-}
-
-.cell.d-4 {
-  animation-delay: 400ms;
-}
-
-.cell:nth-child(1) {
-  --cell-color: #ff5e00;
-}
-
-.cell:nth-child(2) {
-  --cell-color: #fd440c;
-}
-
-.cell:nth-child(3) {
-  --cell-color: #fb5817;
-}
-
-.cell:nth-child(4) {
-  --cell-color: #f96023;
-}
-
-.cell:nth-child(5) {
-  --cell-color: #f75e30;
-}
-
-.cell:nth-child(6) {
-  --cell-color: #f5713d;
-}
-
-.cell:nth-child(7) {
-  --cell-color: #f47745;
-}
-
-.cell:nth-child(8) {
-  --cell-color: #f18553;
-}
-
-.cell:nth-child(9) {
-  --cell-color: #ff7860;
-}
-
-/*Animation*/
-@keyframes ripple {
-  0% {
-    background-color: transparent;
-  }
-
-  30% {
-    background-color: var(--cell-color);
-  }
-
-  60% {
-    background-color: transparent;
-  }
-
-  100% {
-    background-color: transparent;
-  }
-}
+ *{
+            margin: 0;
+            padding: 0;
+        }
+        #loader{
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            z-index:1000 ;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes loader_exit {
+            from{
+                top: 0px;
+            }
+            to{
+                top: -100vh;
+            }
+        }
