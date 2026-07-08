@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     loader_main.style.display = "none";
-  }, 10000);
+  }, 2000);
   
 
 });
