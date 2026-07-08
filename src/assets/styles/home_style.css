@@ -15,19 +15,19 @@
 }
 @font-face {
   font-family: valorant;
-  src: url(../assets/fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
+  src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
 }
 @font-face {
   font-family: google_sans;
-  src: url(../assets/fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+  src: url(../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
 }
 @font-face {
   font-family: monserrat;
-  src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: led_counter_7;
-  src: url(../assets/fonts/led-counter-7/led_counter-7.ttf);
+  src: url(../fonts/led-counter-7/led_counter-7.ttf);
 }
 
 body {
