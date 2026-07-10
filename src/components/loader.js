@@ -1,22 +1,23 @@
-document.head.innerHTML += `<style id="hold-animation-loader">
+const animation_stopper = document.getElementById("hold-animation-loader");
+if (!animation_stopper) {
+  document.head.innerHTML += `<style id="hold-animation-loader">
 #main *{
 animation-play-state: paused !important;
 transition:none !important;
 }
-</style>`
+</style>`;
+}
 document.body.innerHTML += `<div id="loader" ></div>`;
 const loader_main = document.getElementById("loader");
 const main = document.getElementById("main");
+
 window.addEventListener("load", () => {
-  if(
-    document.getElementById("hold-animation-loader")) {
-    document.getElementById("hold-animation-loader").remove()
+  if (document.getElementById("hold-animation-loader")) {
+    document.getElementById("hold-animation-loader").remove();
   }
-  loader.style.animationName = "loader_exit"
+  loader.style.animationName = "loader_exit";
 
   setTimeout(() => {
     loader_main.style.display = "none";
   }, 2000);
-  
-
 });
