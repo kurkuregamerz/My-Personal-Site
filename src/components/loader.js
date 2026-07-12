@@ -33,7 +33,7 @@ const main = document.getElementById("main");
 let date = new Date(Date.now() + 86400000);
 
 async function loader_loading_dots_color_changer() {
-  setTimeout(async () => { loader_loading_dots_color_changer() }, 3400)
+  setTimeout(async () => { loader_loading_dots_color_changer() }, 800)
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   for (
     index = 1;
@@ -49,7 +49,7 @@ async function loader_loading_dots_color_changer() {
     const row2dot = document.querySelector("#dotted_line_2 .dot" + index);
     row1dot.style.backgroundColor = "var(--theme-accent-color)";
     row2dot.style.backgroundColor = "var(--theme-accent-color)";
-    await sleep(400);
+    await sleep(100);
     row1dot.style.backgroundColor = "rgba(206, 206, 206, 0.219)";
     row2dot.style.backgroundColor = "rgba(206, 206, 206, 0.219)";
 
