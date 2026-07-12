@@ -75,7 +75,7 @@
   }
 }
 #dropdown_menu_navbar {
-  background-color: var(--theme-accent-color);
+  background-color: var(--theme-secondary-color);
   position: absolute;
   top: 100%;
   width: 72%;
@@ -154,7 +154,7 @@
   border-bottom: 1px solid var(--theme-primary-color);
 }
 #dropdown_menu_navbar  a:hover {
-  color: var(--theme-secondary-color);
+  color: var(--theme-accent-color);
 }
 #section1_dropdown_menu_navbar {
   width: 100%;

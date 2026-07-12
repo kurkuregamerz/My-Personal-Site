@@ -1,13 +1,13 @@
 :root {
   --theme-primary-color: rgb(255, 255, 255);
-  --theme-secondary-color: rgb(201, 66, 4);
+  --theme-secondary-color: #000000ea;
   --theme-primary-gradient: linear-gradient(
     100deg,
     #c03701ee 47%,
     rgb(212, 70, 0) 91%,
     rgb(219, 90, 0) 100%
   );
-  --theme-accent-color: #000000ea;
+  --theme-accent-color: rgb(201, 66, 4);
 }
 * {
   margin: 0;
