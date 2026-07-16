@@ -31,9 +31,12 @@ document.body.innerHTML += `<div id="loader_container"
 const loader_main = document.getElementById("loader_container");
 const main = document.getElementById("main");
 let date = new Date(Date.now() + 86400000);
-
+let should_run = 1;
 async function loader_loading_dots_color_changer() {
-  setTimeout(async () => { loader_loading_dots_color_changer() }, 800)
+  if (!should_run) {
+    return
+  }
+  setTimeout(async () =>  loader_loading_dots_color_changer() , 800)
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   for (
     index = 1;
@@ -44,7 +47,6 @@ async function loader_loading_dots_color_changer() {
     2;
     index++
   ) {
-    console.log(index);
     const row1dot = document.querySelector("#dotted_line_1 .dot" + index);
     const row2dot = document.querySelector("#dotted_line_2 .dot" + index);
     row1dot.style.backgroundColor = "var(--theme-accent-color)";
@@ -91,7 +93,8 @@ function loader_exit_line_dots() {
 
 
 window.addEventListener("load", () => {  
-  clearTimeout(async () => { loader_loading_dots_color_changer() }, 4000)
+  should_run = 0;
+  // clearTimeout(async () => loader_loading_dots_color_changer(), 800);
   loader_exit_line_dots() 
   if (document.getElementById("hold-animation-loader")) {
     document.getElementById("hold-animation-loader").remove();
