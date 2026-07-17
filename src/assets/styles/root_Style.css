@@ -24,7 +24,7 @@ body {
   overflow-x: scroll;
   overflow-y: scroll; 
   cursor: url("../icons/cursor_global.ico") , default;
-}
+} 
 *::-webkit-scrollbar {
     display: none;
   }
