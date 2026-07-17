@@ -27,7 +27,7 @@ body {
 } 
 *::-webkit-scrollbar {
     display: none;
-  }
+  }     
 @font-face {
   font-family: valorant; 
   src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
