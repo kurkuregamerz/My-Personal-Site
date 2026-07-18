@@ -22,7 +22,7 @@ function text_adder(element, text) {
   
 } 
 text_adder(text_ability_owner_in_main, "impacting users through the experience")
-text_adder(greeting_by_owner_and_about_about_owner_main, "Hi I'm Ishan. A Web Developer creating absolute masterpieces" )
+text_adder(greeting_by_owner_and_about_about_owner_main, "Hi I'm Ishan. A Web Developer creating absolute masterpieces." )
 main.innerHTML += navbar_creator();
 document.head.innerHTML += css_file_link;
 Event_listener_config_creator_dropdown_nav()

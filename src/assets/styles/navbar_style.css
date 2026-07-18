@@ -1,7 +1,6 @@
 #navbar_main {
   position:absolute;
   top: 0px;
-  top: -300px;
   height: fit-content;
   background-color: var(--theme-primary-gradient);
   width: 100%;
@@ -12,7 +11,7 @@
   align-self: center;
   align-items: center;
   animation-duration: 1.5s;
-  animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.150);
   animation-name: navbar_main_reveal_animation;
   animation-fill-mode: forwards;
   animation-range: entry 0% entry 100%;
@@ -100,12 +99,7 @@
   visibility: hidden;
   color: var(--theme-primary-color);
 }
-@media screen and (orientation: portrait) {
-  #dropdown_menu_navbar{
-    min-height: 20em;
-    max-height: 20em;
-  }
-}
+
 #dropdown_menu_navbar a {
   font-family: google_sans;
   color: var(--theme-primary-color);
@@ -164,6 +158,18 @@
 #section2_dropdown_menu_navbar {
   width: 100%;
   
+}
+@media screen and (orientation: portrait) {
+  #dropdown_menu_navbar{
+    min-height: 20em;
+    max-height: 20em;
+     grid-row: 1/3;
+  }
+  #navbar_main{
+    overflow-X: auto;
+   
+    
+  }
 }
 @keyframes navbar_main_reveal_animation {
   from {
