@@ -1,0 +1,54 @@
+:root {
+  --theme-primary-color: #f7f7f7;
+  --theme-secondary-color: #000000ea;
+  --theme-primary-gradient: linear-gradient(
+    100deg,
+    #c03701ee 47%,
+    rgb(212, 70, 0) 91%,
+    rgb(219, 90, 0) 100%
+  );
+  --theme-accent-color: rgb(201, 66, 4);
+}
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overflow-y: scroll; 
+  cursor: url("../icons/cursor_global.ico") , default;
+} 
+*::-webkit-scrollbar {
+    display: none;
+  }     
+@font-face {
+  font-family: valorant; 
+  src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
+}
+@font-face {
+  font-family: google_sans;
+  src: url(../fonts/Google_Sans/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf);
+}
+@font-face {
+  font-family: monserrat;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: led_counter_7;
+  src: url(../fonts/led-counter-7/led_counter-7.ttf);
+}
+@font-face {
+  font-family: moliga;
+  src: url(../fonts/moliga-demo/Moliga\ DEMO.otf);
+}
+@font-face {
+  font-family: inter_semibold;
+  src: url(../fonts/inter/inter.28pt-semibold.ttf);
+}
