@@ -1,12 +1,13 @@
 #navbar_main {
   position:absolute;
   top: 0px;
-  height: fit-content;
+  height:50vh;
   background-color: var(--theme-primary-gradient);
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns:1fr ;
   grid-column: 1/6;
-  z-index: 900;
+  grid-row: 1/65;
   justify-content: center;
   align-self: center;
   align-items: center;
@@ -16,7 +17,6 @@
   animation-fill-mode: forwards;
   animation-range: entry 0% entry 100%;
   animation-delay: 0.2s;
- 
 }
 #navbar_main ul {
   list-style: none;
@@ -28,6 +28,8 @@
   column-gap: 10vw;
   align-items: center;
   font-size: 1.2vmax;
+  grid-row: 1;
+  overflow-x:auto;
 }
 #navbar_main ul a {
   list-style: none;
@@ -77,18 +79,18 @@
 #dropdown_menu_navbar {
   background-color: var(--theme-secondary-color);
   position: absolute;
-  top: 100%;
-  width: 72%;
+  top: 5vh;
   min-height: 30em;
   max-height: 80%;
   padding-left: 4%;
   padding-right: 4%;
-  align-self: start;
+  align-self:first baseline;
   justify-self: center;
   z-index: 1000;
   align-items: center;
   border-radius: 1vmax;
   display: grid;
+  grid-row: 2/3;
   color: var(--theme-primary-color);
   font-family: inter_semibold;
   grid-template-columns: 3fr 2fr;
@@ -98,6 +100,8 @@
   transition-duration: 0.2s;
   visibility: hidden;
   color: var(--theme-primary-color);
+  overflow-x:auto;
+  
 }
 
 #dropdown_menu_navbar a {
@@ -111,6 +115,7 @@
   display: grid;
   justify-content: left;
   font-size: 2vmax;
+  
 }
 .sections_dropdown_menu_navbar a{
   transition-duration: 0.1s;
@@ -167,9 +172,14 @@
   }
   #navbar_main{
     overflow-X: auto;
-   
+    width: 98vw;
+    justify-items: left;
+  }
+  #dropdown_menu_navbar{
+    justify-self: center;
     
   }
+
 }
 @keyframes navbar_main_reveal_animation {
   from {

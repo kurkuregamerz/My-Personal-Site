@@ -71,24 +71,6 @@ function loader_exit_line_dots() {
   dotted_line_2.style.transform = "rotate(45deg)"
 }
 
-// while (i == 0) {
-//   if (index <= 6 ) { index++ }
-//   else {
-//     index = 0
-//   }
-//   let doti = document.querySelectorAll(".dot" + index);
-//   let dotii = document.querySelectorAll(".dot" + index);
-// //   doti.style.backgroundColor = "orange";
-// //   dotii.style.backgroundColor = "orange";
-// //   await setTimeout(() => {
-// //     doti.style.backgroundColor = "rgba(206, 206, 206, 0.219)";
-// //     dotii.style.backgroundColor = "rgba(206, 206, 206, 0.219)";
-// //   }, 1000);
-//   // }
-// }
-// }
-// document.readyState !== 'complete'
-
   loader_loading_dots_color_changer();
 
 
