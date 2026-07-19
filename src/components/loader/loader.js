@@ -1,3 +1,4 @@
+document.head.innerHTML += `<link rel="stylesheet" href="../components/loader/loader.css" />`;
 const animation_stopper = document.getElementById("hold-animation-loader");
 if (!animation_stopper) {
   document.head.innerHTML += `<style id="hold-animation-loader">
@@ -29,7 +30,6 @@ document.body.innerHTML += `<div id="loader_container"
 </div>
 </div>`;
 const loader_main = document.getElementById("loader_container");
-const main = document.getElementById("main");
 let date = new Date(Date.now() + 86400000);
 let should_run = 1;
 async function loader_loading_dots_color_changer() {

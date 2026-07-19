@@ -3,9 +3,9 @@
   --theme-secondary-color: #000000ea;
   --theme-primary-gradient: linear-gradient(
     100deg,
-    #c03701ee 47%,
-    rgb(212, 70, 0) 91%,
-    rgb(219, 90, 0) 100%
+    #c03701ee 45%,
+    rgb(247, 84, 2) 91%,
+    rgb(248, 103, 0) 100%
   );
   --theme-accent-color: rgb(201, 66, 4);
 }
