@@ -1,3 +1,4 @@
+
 #main {
   position: relative;
   height: 100vh;
@@ -9,7 +10,7 @@
   justify-items: center;
   align-items: center;
   scroll-behavior: smooth;
- 
+  
 }
 #loader {
   display: block;
@@ -148,7 +149,7 @@
 }
 
 #about_owner_main .about_owner_main_text {
-  font-size: 4vmax;
+  font-size: 4.5vmax;
   font-family: inter_semibold;
   text-transform: uppercase;
 }
@@ -186,6 +187,7 @@
   font-size: 1.5vmax;
   font-family: inter_semibold;
   text-transform: uppercase;
+  line-height: 2vmax;
   display:flex;
   width: 100%;
   flex-wrap: wrap;
@@ -201,7 +203,7 @@
   display: flex;
   border: 5px solid;
   grid-row: 2/4;
-  height: 80%;
+  height: 100%;
   justify-self: center ;
   align-self:first baseline;
   border-radius: 1vmin;
@@ -266,6 +268,9 @@
     word-wrap: break-word;
     text-align: center;
     text-align-last: center;
+  }
+  #design_image_about_owner_main{
+    height: 80%;
   }
   #about_owner_hero_section{
     display: none;

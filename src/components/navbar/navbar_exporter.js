@@ -67,7 +67,7 @@ export function navbar_creator() {
             </nav>
            `;
 }
-export const css_file_link = `<link rel="stylesheet" href="../components/navbar/navbar_style.css">`;
+export const css_file_link_navbar = `<link rel="stylesheet" href="../components/navbar/navbar_style.css">`;
 
 
 
@@ -111,11 +111,15 @@ let navbar_navigation_menu_button_click_count = 0;
           if (screen.orientation.type == "portrait-primary") {
             dropdown_menu_navbar.style.height = "100%";
             
+            
           }
           else if(screen.orientation.type == "landscape-primary") {
             dropdown_menu_navbar.style.height = "90%";
+            
           }
+          dropdown_menu_navbar.style.display = "grid";
           dropdown_menu_navbar.style.visibility = "visible";
+          dropdown_menu_navbar.style.transform = "skewY(100%)"
             navbar_navigation_menu_button_click_count = 1;
         } else {
             document.body.removeEventListener(
@@ -124,8 +128,11 @@ let navbar_navigation_menu_button_click_count = 0;
             );
             navbar_menu_navigation_button_line1.style.transform = `rotate(0deg)`;
             navbar_menu_navigation_button_line2.style.transform = `rotate(0deg)`;
-            dropdown_menu_navbar.style.height = "0%";
-            dropdown_menu_navbar.style.visibility = "hidden";
+          dropdown_menu_navbar.style.height = "0%";
+          dropdown_menu_navbar.style.opacity = "100%"
+          dropdown_menu_navbar.style.visibility = "hidden";
+          dropdown_menu_navbar.style.display = "none";
+          
             navbar_navigation_menu_button_click_count = 0;
         }
     });

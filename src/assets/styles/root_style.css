@@ -14,6 +14,7 @@
   padding: 0;
  
 }
+
 body {
   display: flex;
   align-items: center;
@@ -24,7 +25,12 @@ body {
   overflow-x: scroll;
   overflow-y: scroll; 
   cursor: url("../icons/cursor_global.ico") , default;
+
+  justify-self: center;
 } 
+a{
+  cursor: url(../icons/cursor_pointer_global.ico), default;
+}
 *::-webkit-scrollbar {
     display: none;
   }     
@@ -51,4 +57,7 @@ body {
 @font-face {
   font-family: inter_semibold;
   src: url(../fonts/inter/inter.28pt-semibold.ttf);
+}
+@media screen and (min-aspect-ratio:21/9){
+  
 }
