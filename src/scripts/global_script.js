@@ -5,6 +5,7 @@ import {
 
 const main = document.getElementById("main");
 const head = document.head;
+document.head.innerHTML += `<link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">`;
 main.innerHTML += navbar_creator();
 head.innerHTML += css_file_link_navbar;
 setTimeout(() => {

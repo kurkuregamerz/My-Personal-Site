@@ -4,10 +4,10 @@
   --theme-primary-gradient: linear-gradient(
     100deg,
     #c03701ee 45%,
-    rgb(247, 84, 2) 91%,
-    rgb(248, 103, 0) 100%
+    #f75402 91%,
+    #f86700 100%
   );
-  --theme-accent-color: rgb(201, 66, 4);
+  --theme-accent-color: #c94204;
 }
 * {
   margin: 0;
