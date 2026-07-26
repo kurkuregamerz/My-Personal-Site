@@ -19,6 +19,7 @@
 #hero_section_main {
   width: 100%;
   height: 99%;
+  max-width: 250vh;
   z-index: 1;
   background: var(--theme-primary-gradient);
   display: grid;
@@ -35,7 +36,6 @@
 
 
 #background_table_herosection {
-  outline: 09px solid white;
   table-layout: fixed;
   grid-row: 1/5;
   grid-column: 1/6;
@@ -74,7 +74,7 @@
   text-align: center;
   text-align-last: center;
   position: relative;
-  font-size: 20vmax;
+  font-size: clamp(12vmax,calc(12em + 12vmax),30em);
   width: 100%;
   animation-duration: 1s;
   animation-timeline: view;
@@ -88,7 +88,7 @@
   font-family: monserrat;
   grid-row: 4;
   grid-column: 2/5;
-  font-size: 10vmax;
+  font-size:  clamp(5vmax,calc(5em + 5vmax),10em);
   z-index: 200;
   justify-self: left;
   margin-left: 2vmax;
@@ -112,7 +112,7 @@
   justify-self: center;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 1.4vmax;
+   font-size: clamp(1vmax,calc(1em + 0.5vmax),2em);
 }
 #about_owner_main {
   padding: 10%;
@@ -252,7 +252,7 @@
   font-family: inter_semibold;
   text-transform: uppercase;
 }
-@media screen and (orientation: portrait) and (max-width:899px){
+@media screen and (orientation: portrait) and (max-width:100vh){
   #hero_section_main {
     width: 100%; 
   }
@@ -268,6 +268,7 @@
     word-wrap: break-word;
     text-align: center;
     text-align-last: center;
+    font-size: 20vmax;
   }
   #design_image_about_owner_main{
     height: 80%;
@@ -279,6 +280,7 @@
     justify-self: center;
     grid-row: 4/6;
     align-self: last baseline;
+    font-size: 10vmax;
   }
   #text_ability_owner_main span {
     
@@ -286,7 +288,7 @@
     text-align-last: center;
   }
 }
-@media  screen and (orientation: portrait) and (max-width:599px) {
+@media  screen and (orientation: portrait) and (max-width:80vh) {
   #about_owner_main {
     height: 80vh;
     justify-items: center;
@@ -397,7 +399,13 @@
     transform: scale(1);
   }
 }
-
+@media screen and (min-width:250vh){
+  #hero_section_main {
+    width: 250vh;
+    padding-left:calc((100vw - 250vh)/2) ;
+    padding-right:calc((100vw - 250vh)/2)  ;
+  }
+}
 /* #main_header{
     width: 100%;
     height: 20%;

@@ -2,6 +2,7 @@
   position:absolute;
   top: 0px;
   height:50vh;
+
   background-color: var(--theme-primary-gradient);
   display: grid;
   grid-template-rows: 1fr 9fr;
@@ -18,6 +19,7 @@
   animation-range: entry 0% entry 100%;
   animation-delay: 0.2s;
 }
+
 #navbar_main ul {
   list-style: none;
   display: flex;
@@ -27,7 +29,7 @@
   font-weight: 500;
   column-gap: 10vw;
   align-items: center;
-  font-size: 1.2vmax;
+   font-size: clamp(1vmax,calc(0.8em + 0.5vmax),2em);
   grid-row: 1;
   overflow-x:auto;
 }
@@ -40,7 +42,6 @@
   font-weight: 500;
   column-gap: 10vw;
   align-items: center;
-  font-size: 1.2vmax;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition-duration: 0.1s;
@@ -52,7 +53,7 @@
 }
 #navbar_logo_text {
   font-family: led_counter_7;
-  font-size: 2vmax;
+    font-size: clamp(1vmax,calc(1em + 0.5vmax),3em);
   font-weight: 800;
 }
 #navbar_navigation_menu_button {
@@ -99,7 +100,6 @@
   justify-content: left;
   transition: linear;
   transition-duration: 1s;
-  visibility: hidden;
   color: var(--theme-primary-color);
   overflow-x:auto;
   
@@ -124,7 +124,7 @@
 
 #contact_info_nav_dropdown{
   height: fit-content;
-  font-size: 1.5vmax;
+  font-size: clamp(1vmax,calc(1em + 0.5vmax),2em);
   justify-content: left;
   justify-self: left;
   padding: 1vmax;
@@ -132,6 +132,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 2vmax; 
 }
+
 #contact_info_nav_dropdown div{
    display: block;
    font-size:x-small;
@@ -139,7 +140,7 @@
 }
 #contact_info_nav_dropdown a {
    display: block;
-   font-size:large;
+    font-size: clamp(1vmax,calc(1em + 0.5vmax),2em);
 }
 #section1_dropdown_menu_navbar ul {
   list-style: square;
@@ -168,22 +169,44 @@
   width: 100%;
   
 }
-@media screen and (orientation: portrait) and (max-width:899px) {
+@media screen and (orientation: portrait) and (max-width:100vh) {
   #dropdown_menu_navbar{
     min-height: 20em;
-    max-height: 20em;
+    height: 20em;
     grid-row: 1/3;
     justify-self: center;
   }
  
 
 }
-@media screen and (orientation: portrait) and (max-width:599px){
+@media screen and (orientation: portrait) and (max-width:80vh){
   #navbar_main{
     width: 95vw;
     overflow-x: scroll;
     justify-content: left;
     justify-items: left;
+  }
+   #dropdown_menu_navbar{
+    width: 85vw;
+   }
+  
+}
+@media screen and (min-width:250vh){
+  #navbar_main ul a{
+    font-size: 4vh;
+  }
+  #navbar_logo_text{
+    font-size: 5vh;
+  }
+  .navbar_menu_button_lines{
+    width:10vh;
+  }
+  #navbar_navigation_menu_button {
+    row-gap: 0.8vmax;
+  }
+   #dropdown_menu_navbar{
+  
+     height: 100vh;
   }
 
 }

@@ -16,7 +16,7 @@
   justify-items: center;
   align-items: center;
   width: 100%;
-  font-size: 12em;
+  font-size: clamp(10em, calc(12em + 5vmax), 40em)
 }
 .pages_quicklink_footer_main {
   font-family: google_sans;
@@ -34,6 +34,7 @@
 #navigation_footer,
 #visit_footer {
   display: grid;
+ font-size: clamp(1em, calc(0.5em + 0.5vmax), 5em);
   grid-template-rows: repeat(1fr);
   line-height: 2em;
   justify-content: center;
@@ -46,14 +47,14 @@
   font-family: google_sans;
   color: rgb(138, 138, 138);
 }
-@media  screen and (orientation: portrait) and (max-width:899px) {
+@media  screen and (orientation: portrait) and (max-width:80vh) {
   #owner_name{
     font-size: 6em;
     grid-column: 1/3;
     grid-row: 2;
   }
 }
-@media  screen and (orientation: portrait) and (max-width:599px) {
+@media  screen and (orientation: portrait) and (max-width:90vh) {
   #footer_main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -64,4 +65,7 @@
     grid-column: 1/3;
     grid-row: 2;
   }
+}
+@media screen and (min-width:250vh){
+  /* #navbar_main */
 }
