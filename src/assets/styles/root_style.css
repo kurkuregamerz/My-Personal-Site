@@ -28,6 +28,10 @@ body {
 
   justify-self: center;
 } 
+#main{
+  background-color: var(--theme-primary-color);
+
+}
 a{
   cursor: url(../icons/cursor_pointer_global.ico), default;
 }

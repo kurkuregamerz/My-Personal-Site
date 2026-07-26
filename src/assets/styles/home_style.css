@@ -242,6 +242,8 @@
   animation-range: entry 0% entry 100%;
   animation-range: cover;
   font-family: led_counter_7;
+  justify-self: center;
+  align-self: center;
 }
 #_no_of_happy_customers_stats{
   grid-row: 1;
@@ -251,7 +253,7 @@
 }
 #_no_of_happy_customers_stats, #_no_of_projects_stats{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 4fr 1fr 10fr;
   align-items: center;
   height: 100%;
 }
@@ -259,12 +261,17 @@
   font-size: clamp(2vmax,calc(1vmin + 1vmax),5vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
-  
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid rgb(219, 219, 219);
 }
 #stats_about_owner_main .text_name{
     font-size: clamp(1vmin,calc(1vmin + 1vmax),4vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
+  display: flex;
+  justify-content: left;
+  grid-column: 3;
 }
 @media screen and (orientation: portrait) and (max-width:100vh){
   #hero_section_main {

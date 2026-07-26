@@ -12,4 +12,18 @@ const greeting_by_owner_and_about_about_owner_main = document.getElementById("gr
 
 text_adder(text_ability_owner_in_main, "impacting users through the experience")
 text_adder(greeting_by_owner_and_about_about_owner_main, "Hi I'm Ishan. A Web Developer creating absolute masterpieces."); 
-
+const load_owner_data = async(url, data) => {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("error fetching data from "+ url + ".Error status" + response.status);
+      
+    }
+    const data_fetched = await response.json()
+    return data_fetched.data
+  } catch (error) {
+    console.log("Error fetching data from '"+ url + "'")
+  }
+  
+}
+// console.log(load_owner_data("../../owner_data/owner_stats.json","no_of_projects_completed"))
