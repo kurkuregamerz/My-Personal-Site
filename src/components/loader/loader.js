@@ -74,7 +74,10 @@ function loader_exit_line_dots() {
   loader_loading_dots_color_changer();
 
 
-window.addEventListener("load", () => {  
+window.addEventListener("load", async () => {  
+  await document.fonts.ready;
+  await document.images.ready;
+
   should_run = 0;
   // clearTimeout(async () => loader_loading_dots_color_changer(), 800);
   loader_exit_line_dots() 

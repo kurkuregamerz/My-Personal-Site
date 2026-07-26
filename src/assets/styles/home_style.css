@@ -6,7 +6,7 @@
   background-color: var(--theme-primary-color);
   overflow-y: auto;
   scrollbar-color: var(--theme-accent-color);
-  display: block;
+  display:block;
   justify-items: center;
   align-items: center;
   scroll-behavior: smooth;
@@ -74,7 +74,7 @@
   text-align: center;
   text-align-last: center;
   position: relative;
-  font-size: clamp(12vmax,calc(12em + 12vmax),30em);
+  font-size: clamp(12vmax,calc(12vmin + 12vmax),30vmax);
   width: 100%;
   animation-duration: 1s;
   animation-timeline: view;
@@ -88,7 +88,7 @@
   font-family: monserrat;
   grid-row: 4;
   grid-column: 2/5;
-  font-size:  clamp(5vmax,calc(5em + 5vmax),10em);
+  font-size:  clamp(5vmax,calc(5vmin + 5vmax),10vmax);
   z-index: 200;
   justify-self: left;
   margin-left: 2vmax;
@@ -112,18 +112,22 @@
   justify-self: center;
   border-radius: 20px;
   font-weight: 600;
-   font-size: clamp(1vmax,calc(1em + 0.5vmax),2em);
+   font-size: clamp(1vmax,calc(1vmin + 0.5vmax),2vmax);
 }
 #about_owner_main {
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 5%;
-  height:80vh;
+  padding-bottom: 5%;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 3fr 1fr 2fr ;
   width: 65vw;
+  
+  height:80vh;
   max-height: fit-content;
   grid-gap: 1vmax;
+  
 }
 #about_owner_main #text_ability_owner_main {
   display: flex;
@@ -149,17 +153,17 @@
 }
 
 #about_owner_main .about_owner_main_text {
-  font-size: 4.5vmax;
+   font-size: clamp(2vmax,calc(5vmin + 1vmax),20vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
 }
 #about_owner_main #highlight_text {
   color: rgb(189, 189, 189);
 }
-#growth_rating_accent_image_about_owner_main{
+#image_container_1_about_owner_main{
   grid-row: 1;
   grid-column: 2;
-  height: 60%;
+  height: 100%;
   justify-self: right;
   align-self: center;
   min-height: 20px;
@@ -173,6 +177,11 @@
   animation-range: cover;
 
 }
+#image_container_1_about_owner_main img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 #greeting_by_owner_and_about_about_owner_main span{
   padding-right: 1vmax;
   animation-name: large_to_normal_slick_right_entry ;
@@ -184,7 +193,7 @@
   font-family: led_counter_7;
 }
 #greeting_by_owner_and_about_about_owner_main{
-  font-size: 1.5vmax;
+   font-size: clamp(1vmax,calc(1vmin + 1vmax),4vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
   line-height: 2vmax;
@@ -192,6 +201,7 @@
   width: 100%;
   flex-wrap: wrap;
   height: 100%;
+  
   grid-column: 2;
   grid-row: 2;
   justify-content:left;
@@ -220,12 +230,10 @@
   grid-column: 2;
   border-radius: 0.2vmin;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  
-  background-color: #ffffff;
-  max-height: 90%;
-  min-height: fit-content;
+  grid-template-rows: 1fr 1fr; 
+  background-color: #ffffff; 
   height:  10vmax;
+  height: fit-content;
   width: 90%;
   padding: 1vmax;
    animation-name: large_to_normal_slick_right_entry ;
@@ -236,19 +244,26 @@
   animation-range: cover;
   font-family: led_counter_7;
 }
+#_no_of_happy_customers_stats{
+  grid-row: 1;
+}
+#_no_of_projects_stats{
+  grid-row: 2;
+}
 #_no_of_happy_customers_stats, #_no_of_projects_stats{
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
+  height: 100%;
 }
 #stats_about_owner_main .no_stats_about_owner_main{
-  font-size: 3vmax;
+     font-size: clamp(2vmax,calc(1vmin + 1vmax),5vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
   
 }
 #stats_about_owner_main .text_name{
-  font-size: 1.8vmax;
+    font-size: clamp(1vmin,calc(1vmin + 1vmax),4vmax);
   font-family: inter_semibold;
   text-transform: uppercase;
 }
@@ -287,6 +302,11 @@
     text-align: center;
     text-align-last: center;
   }
+  #image_container_1_about_owner_main{
+    height: 100%;
+    
+  }
+ 
 }
 @media  screen and (orientation: portrait) and (max-width:80vh) {
   #about_owner_main {
@@ -303,10 +323,11 @@
     justify-items: center;
     justify-content: center;
   }
-  #growth_rating_accent_image_about_owner_main{
+  #image_container_1_about_owner_main{
     grid-area: 2/1/3/2;
     animation-name: large_to_normal_slick_entry_center;
     height: 100%;
+    width: 100%;
     justify-self: center;
   }
   #greeting_by_owner_and_about_about_owner_main{
@@ -323,6 +344,16 @@
   }
   #greeting_by_owner_and_about_about_owner_main span{
      animation-name: large_to_normal_slick_entry_center;
+  }
+}
+@media screen and (min-width:250vh){
+  #hero_section_main {
+    width: 250vh;
+    padding-left:calc((100vw - 250vh)/2) ;
+    padding-right:calc((100vw - 250vh)/2)  ;
+  }
+  #about_owner_main {
+  padding-left: 5%;
   }
 }
 @keyframes large_to_normal_slick_entry_center {
@@ -399,21 +430,4 @@
     transform: scale(1);
   }
 }
-@media screen and (min-width:250vh){
-  #hero_section_main {
-    width: 250vh;
-    padding-left:calc((100vw - 250vh)/2) ;
-    padding-right:calc((100vw - 250vh)/2)  ;
-  }
-}
-/* #main_header{
-    width: 100%;
-    height: 20%;
-    max-height: 4em;
-    
 
-}
-#navbar_main{
-    height: 80%;
-    box-shadow: 1px 1px 10px var(--theme-accent-color);
-} */
