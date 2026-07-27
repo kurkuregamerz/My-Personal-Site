@@ -80,6 +80,12 @@ async function loader_exit_line_dots() {
 
 
 window.addEventListener("load", async () => {  
+  await document.fonts.load("1em 'valorant' ")
+  await document.fonts.load("1em 'google_sans' ")
+  await document.fonts.load("1em 'monserrat' ")
+   await document.fonts.load("1em 'led_counter_7' ")
+  //  await document.fonts.load("1em 'moliga' ")
+   await document.fonts.load("1em 'inter_semibold' ")
   await document.fonts.ready;
   await document.images.ready;
 
