@@ -30,6 +30,7 @@ document.body.innerHTML += `<div id="loader_container"
 </div>
 </div>`;
 const loader_main = document.getElementById("loader_container");
+const loader = document.getElementById("loader")
 let date = new Date(Date.now() + 86400000);
 let should_run = 1;
 async function loader_loading_dots_color_changer() {
@@ -58,7 +59,7 @@ async function loader_loading_dots_color_changer() {
   
   }
 }
-function loader_exit_line_dots() {
+async function loader_exit_line_dots() {
   const dots = document.querySelectorAll(".loader_lines_dot");
   const dotted_line_1 = document.getElementById("dotted_line_1");
   const dotted_line_2 = document.getElementById("dotted_line_2");
@@ -69,6 +70,10 @@ function loader_exit_line_dots() {
   dotted_line_1.style.gridRow = 2;
   dotted_line_1.style.transform = "rotate(-45deg)"
   dotted_line_2.style.transform = "rotate(45deg)"
+  loader_main.style.animationName = "loader_exit";
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1500);
 }
 
   loader_loading_dots_color_changer();
@@ -80,13 +85,11 @@ window.addEventListener("load", async () => {
 
   should_run = 0;
   // clearTimeout(async () => loader_loading_dots_color_changer(), 800);
-  loader_exit_line_dots() 
+  await loader_exit_line_dots() 
   if (document.getElementById("hold-animation-loader")) {
     document.getElementById("hold-animation-loader").remove();
   }
-  loader_main.style.animationName = "loader_exit";
+  
 
-  setTimeout(() => {
-    loader_main.style.display = "none";
-  }, 1500);
+  
 })
