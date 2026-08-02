@@ -88,6 +88,9 @@ export function Event_listener_config_creator_dropdown_nav() {
       if (Event.target == dropdown_menu_navbar) {
         return null;
       } else {
+        navbar_navigation_menu_button.style.gridTemplateRows = "1fr 1fr";
+        navbar_menu_navigation_button_line1.style.gridRow = 1;
+        navbar_menu_navigation_button_line2.style.gridRow = 2;
         navbar_menu_navigation_button_line1.style.transform = `rotate(0deg)`;
         navbar_menu_navigation_button_line2.style.transform = `rotate(0deg)`;
         dropdown_menu_navbar.style.height = "0%";
@@ -106,6 +109,9 @@ export function Event_listener_config_creator_dropdown_nav() {
           body_event_listener_dropdownmenu_nav,
         );
       }, 100);
+      navbar_menu_navigation_button_line1.style.gridRow = 1;
+
+      navbar_menu_navigation_button_line2.style.gridRow = 1;
       navbar_menu_navigation_button_line1.style.transform = `rotate(-120deg)`;
       navbar_menu_navigation_button_line2.style.transform = `rotate(120deg)`;
       if (screen.orientation.type == "portrait-primary") {
@@ -114,19 +120,24 @@ export function Event_listener_config_creator_dropdown_nav() {
         dropdown_menu_navbar.style.height = "90%";
       }
       dropdown_menu_navbar.style.display = "grid";
-      
     } else {
       navbar_navigation_menu_button_click_count = 0;
       document.body.removeEventListener(
         "click",
         body_event_listener_dropdownmenu_nav,
       );
+      navbar_navigation_menu_button.style.gridTemplateRows = "1fr 1fr";
+      navbar_menu_navigation_button_line1.style.gridRow = 1;
+      navbar_menu_navigation_button_line2.style.gridRow = 2;
       navbar_menu_navigation_button_line1.style.transform = `rotate(0deg)`;
       navbar_menu_navigation_button_line2.style.transform = `rotate(0deg)`;
       dropdown_menu_navbar.style.height = "0%";
       dropdown_menu_navbar.style.display = "none";
-      
     }
-  }
-  navbar_navigation_menu_button.addEventListener("click", navbar_navigation_menu_button_event_listener_callback);
+  };
+  navbar_navigation_menu_button.addEventListener(
+    "click",
+    navbar_navigation_menu_button_event_listener_callback,
+  );
 }
+

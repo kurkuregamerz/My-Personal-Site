@@ -59,6 +59,8 @@
 #navbar_navigation_menu_button {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  /* width: 2vmax; */
+  overflow: visible;
   row-gap: 0.5vmax;
   cursor: url("../../assets/icons/cursor_pointer_global.ico") 10 10, pointer;
 }
@@ -66,11 +68,15 @@
   height: 0px;
   width: 2vmax;
   border: 1px solid white;
+  justify-self: center;
+  align-self: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 0.5s;
   display: flex;
   justify-self: center;
-  transform-origin: 65%;
+  transform-origin: 50%;
+  z-index: auto;
+  grid-column: 1;
 }
 @media screen and (orientation: landscape){
   #dropdown_menu_navbar{
@@ -99,7 +105,7 @@
   gap: 1vmax;
   justify-content: left;
   transition: linear;
-  transition-duration: 1s;
+  transition-duration: 0.2s;
   color: var(--theme-primary-color);
   overflow-x:auto;
   

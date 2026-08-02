@@ -7,7 +7,7 @@
     #f75402 91%,
     #f86700 100%
   );
-  --theme-accent-color: #c94204;
+  --theme-accent-color: #d84603;
 }
 * {
   margin: 0;
@@ -16,11 +16,12 @@
 }
 
 body {
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  min-height: 100dvh;
+  height: fit-content;
   scroll-behavior: smooth;
   overflow-x: scroll;
   overflow-y: scroll; 
@@ -30,14 +31,53 @@ body {
 } 
 #main{
   background-color: var(--theme-primary-color);
-
+  display: flex;
+  flex: 1 0 auto;
+  min-height: 100dvh;
+  height: fit-content;
 }
 a{
   cursor: url(../icons/cursor_pointer_global.ico), default;
 }
 *::-webkit-scrollbar {
     display: none;
-  }     
+  }    
+  .section_name_marking{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  align-content: center;
+  border-radius: 2vmax;
+  padding: 1vmin;
+   font-family: monserrat;
+   font-weight:600;
+   font-size: clamp(1vmin, calc(1em + 1vmin), 1vmax);
+  background-color: rgb(211, 211, 211);
+  width: 4vmax;
+  height: 2vmax;
+  min-width: fit-content;
+}
+.section_name_marking .bulleting_logo{
+  width: 2vmax;
+  height: 2vmax;
+  background-color: var(--theme-accent-color);
+  border-radius: 2vmax;
+}
+.listing_number .item_number{
+  font-family: monserrat;
+  font-weight: bold;
+  grid-column: 2;
+  padding-right: 1em;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+.bullet_point{
+  background-color: var(--theme-accent-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  
+} 
 @font-face {
   font-family: valorant; 
   src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
@@ -63,6 +103,43 @@ a{
   font-family: inter_semibold;
   src: url(../fonts/inter/inter.28pt-semibold.ttf);
 }
-@media screen and (min-aspect-ratio:21/9){
-  
+
+@keyframes large_to_normal_slick_entry_bottom_left {
+  from {
+    transform: scale(1.2) translateX(-10vmax) translateY(6vmax);
+  }
+  to {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+}
+@keyframes large_to_normal_slick_right_entry {
+  from {
+    transform: translateX(5vmax) scale(1.2);
+
+    opacity: 20%;
+  }
+  to {
+    transform: translateX(0px) scale(1);
+    opacity: 100%;
+  }
+}
+@keyframes large_to_normal_slick_entry {
+  from {
+    transform: scale(1.2);
+
+    opacity: 20%;
+  }
+  to {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+@keyframes micro_to_large_image_animation{
+  from{
+    width: 1%;
+  }
+  to{
+    width:100%
+  }
 }
