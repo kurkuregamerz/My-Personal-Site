@@ -57,7 +57,7 @@ a{
   height: 2vmax;
   min-width: fit-content;
 }
-.section_name_marking .bulleting_logo{
+.bulleting_logo{
   width: 2vmax;
   height: 2vmax;
   background-color: var(--theme-accent-color);
@@ -78,6 +78,39 @@ a{
   border-radius: 1em;
   
 } 
+.hyperlinked_buttons{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  align-content: center;
+  border-radius: 2vmax;
+  font-family: monserrat;
+  font-weight:600;
+  font-size: clamp(1vmin, calc(1em + 1vmin), 1vmax);
+  background-color: rgb(211, 211, 211);
+  width: 4vmax;
+  height: 2vmax;
+ background-color: var(--theme-accent-color);
+  min-width: fit-content;
+  text-decoration: none;
+  border: 0px;
+  padding: 1vmin;
+  transition-duration: 0.2s;
+}
+.hyperlinked_button_hyperlink{
+  text-decoration: none;
+  transition-duration: 0.2s;
+  padding: 1vmin;
+}
+.hyperlinked_buttons:hover{
+  background-color: rgb(202, 202, 202);
+  
+}
+.hyperlink_arrow_image{
+  height: 2vmax;
+  width: 2vmax;
+  grid-column: 1;
+}
 @font-face {
   font-family: valorant; 
   src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
@@ -135,11 +168,19 @@ a{
   }
 }
 
-@keyframes micro_to_large_image_animation{
-  from{
-    width: 1%;
-  }
-  to{
-    width:100%
-  }
+
+
+.large_to_normal_slick_entry_applied_elements {
+  animation-name: large_to_normal_slick_entry;
+  animation-fill-mode: forwards;
 }
+
+.large_to_normal_slick_right_entry_applied_elements {
+  animation: large_to_normal_slick_right_entry;
+  animation-fill-mode: forwards;
+}
+.large_to_normal_slick_entry_bottom_left_applied_elements {
+  animation-name: large_to_normal_slick_entry_bottom_left;
+  animation-fill-mode: forwards;
+}
+
