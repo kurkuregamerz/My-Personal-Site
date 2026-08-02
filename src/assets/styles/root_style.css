@@ -90,7 +90,8 @@ a{
   background-color: rgb(211, 211, 211);
   width: 4vmax;
   height: 2vmax;
- background-color: var(--theme-accent-color);
+cursor: url(../icons/cursor_pointer_global.ico), default;
+ background-color: rgb(202, 202, 202);
   min-width: fit-content;
   text-decoration: none;
   border: 0px;
@@ -103,7 +104,7 @@ a{
   padding: 1vmin;
 }
 .hyperlinked_buttons:hover{
-  background-color: rgb(202, 202, 202);
+   background-color: var(--theme-accent-color);
   
 }
 .hyperlink_arrow_image{
