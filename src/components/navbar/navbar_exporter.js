@@ -1,5 +1,8 @@
 export function navbar_creator() {
-  return `<nav id="navbar_main">
+  let navbar = document.createElement("nav");
+  navbar.setAttribute("id", "navbar_main")
+  main.prepend(navbar)
+  navbar.innerHTML +=`
                 <ul class="navbar_navigation_buttons_box">
                     <li id="navbar_logo_text">Portfolio@</li>
                     <li class="navbar_navigation_buttons" id="navbar_home_navigation_button" ><a href="/src/pages/home_page.html">Home</a></li>
@@ -64,12 +67,11 @@ export function navbar_creator() {
           
         </div>
         </div>
-            </nav>
+            
            `;
-}
-export const css_file_link_navbar = `<link rel="stylesheet" href="../components/navbar/navbar_style.css">`;
-
-export function Event_listener_config_creator_dropdown_nav() {
+    const css_file_link_navbar = `<link rel="stylesheet" href="../components/navbar/navbar_style.css">`;
+  document.head.innerHTML += css_file_link_navbar;
+   function Event_listener_config_creator_dropdown_nav() {
   const dropdown_menu_navbar = document.getElementById("dropdown_menu_navbar");
 
   const navbar_navigation_menu_button = document.getElementById(
@@ -140,4 +142,11 @@ export function Event_listener_config_creator_dropdown_nav() {
     navbar_navigation_menu_button_event_listener_callback,
   );
 }
+
+
+  setTimeout(() => {
+    Event_listener_config_creator_dropdown_nav()
+  }, 100);
+}
+
 

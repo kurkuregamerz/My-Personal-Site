@@ -1,5 +1,9 @@
-export function footer_creator(){
-    return `<footer id="footer_main">
+export function footer_creator() {
+  let footer = document.createElement("div")
+  footer.setAttribute("id", "footer_main")
+
+  main.append(footer)
+    footer.innerHTML = `<footer id="footer_main">
       <div id="navigation_footer">
         
         <ul id="navigation_pages_list_footer">
@@ -56,5 +60,6 @@ export function footer_creator(){
       </div>
       <div id="owner_name">Ishan</div>
     </footer>`
+  const css_file_link_footer = `<link rel="stylesheet" href="../components/footer/footer_style.css"></link>`
+  document.head.innerHTML += css_file_link_footer
 }
-export const css_file_link_footer = `<link rel="stylesheet" href="../components/footer/footer_style.css"></link>`
