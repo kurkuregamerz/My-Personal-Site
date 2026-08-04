@@ -15,6 +15,7 @@
 }
 
 #hero_section_main {
+  position: relative;
   width: 100%;
   height: 99%;
   max-width: 250vh;
@@ -30,6 +31,7 @@
   grid-template-rows: 1fr 3fr 3fr 3fr;
   overflow: hidden;
   min-height: fit-content;
+  
 }
 
 #background_table_herosection {
@@ -112,6 +114,7 @@
   font-size: clamp(1vmax, calc(1vmin + 0.5vmax), 2vmax);
 }
 #about_me_container_main {
+  position: relative;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -122,7 +125,7 @@
   width: 65vw;
 
   height: 80vh;
-  max-height: fit-content;
+  min-height: fit-content;
   grid-gap: 1vmax;
 }
 #about_me_container_main #text_ability_owner_main {
@@ -258,6 +261,7 @@
   grid-column: 3;
 }
 #our_services_container_main {
+  position: relative;
   height: 200vh;
   width: 70vw;
   display: grid;
@@ -267,6 +271,7 @@
   box-sizing: border-box;
   padding-bottom: 5%;
   overflow-y: visible;
+  min-height: fit-content;
 }
 
 #our_services_container_main #largetext_our_services_container_main {
@@ -394,18 +399,20 @@
 .our_services_service_info_main .service_name:hover {
   color: var(--theme-accent-color);
 }
-@keyframes micro_to_normal_image_for_our_services_animation{
-  from{
+@keyframes micro_to_normal_image_for_our_services_animation {
+  from {
     width: 1%;
   }
-  to{
-    width:100%
+  to {
+    width: 100%;
   }
-}.micro_to_normal_image_for_our_servies_animation_applied_elements {
+}
+.micro_to_normal_image_for_our_servies_animation_applied_elements {
   animation-name: micro_to_normal_image_for_our_services_animation;
   animation-fill-mode: forwards;
 }
 #our_projects_section_main {
+  position: relative;
   height: 150vh;
   max-height: fit-content;
   width: 70vw;
@@ -416,6 +423,7 @@
   box-sizing: border-box;
   padding-bottom: 5%;
   overflow-y: visible;
+  min-height: fit-content;
 }
 #largetext_our_projects_container_main {
   display: grid;
@@ -449,7 +457,6 @@
   border-bottom: 1px solid black;
 }
 
-
 #project_1_container_our_projects_section_main {
   height: 50vh;
   width: 70vh;
@@ -459,16 +466,16 @@
   width: 60vh;
   justify-self: right;
 }
-@keyframes small_to_normal_image_animation_for_projects_containers{
-  from{
+@keyframes small_to_normal_image_animation_for_projects_containers {
+  from {
     transform: scale(0.6);
   }
-  to{
-    transform: scale(1.0);
+  to {
+    transform: scale(1);
   }
 }
-.small_to_normal_image_animation_for_projects_containers_applied_elements{
-  animation-name:small_to_normal_image_animation_for_projects_containers;
+.small_to_normal_image_animation_for_projects_containers_applied_elements {
+  animation-name: small_to_normal_image_animation_for_projects_containers;
 }
 .project_container_our_projects_section_main {
   background-color: #ffffff;
@@ -491,10 +498,9 @@
   transform: scale(0.6);
   transition-duration: 0.5s;
   border-bottom: 4px solid transparent;
-  margin: 1vh ;
+  margin: 1vh;
 }
-.project_container_our_projects_section_main:hover{
-
+.project_container_our_projects_section_main:hover {
   border-bottom: 4px solid var(--theme-accent-color);
 }
 .project_container_our_projects_section_main img {
@@ -556,7 +562,7 @@
   }
   #our_services_container_main {
     height: fit-content;
-    
+
     width: 80vw;
   }
   #our_services_container_main li {
@@ -573,7 +579,7 @@
     height: 35vh;
     width: 50vh;
   }
-  #our_projects_section_main{
+  #our_projects_section_main {
     height: 80vh;
     min-height: fit-content;
   }
