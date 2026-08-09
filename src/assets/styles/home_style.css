@@ -506,7 +506,7 @@
   font-weight: 400;
   border-top: 1px solid rgb(119, 119, 119);
 }
-#our_design_process_container{
+#our_development_process_container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows:1fr 2fr 3fr;
@@ -518,7 +518,7 @@
   padding: 5vw;
 
 }
-#largetext_our_design_process_container_main{
+#largetext_our_development_process_container_main{
   grid-column: 1/6;
   justify-content: center;
   align-items: center;
@@ -528,7 +528,7 @@
   justify-self: center;
   grid-column: 1/6;
 }
-#our_design_process_container ul {
+#our_development_process_container ul {
   list-style: none;
   display: flex;
   width: 100%;
@@ -541,7 +541,7 @@
   flex-wrap: wrap;
   
 }
-#our_design_process_container .process_boxes{
+#our_development_process_container .process_boxes{
   min-width: 10em;
   min-height: 15em;
   width: 10vw;
@@ -559,7 +559,7 @@
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   
 }
-#our_design_process_container .process_boxes .process_icon{
+#our_development_process_container .process_boxes .process_icon{
   width: 2vmax;
   height: 2vmax;
   background-color: transparent;
@@ -577,17 +577,17 @@
    transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-#our_design_process_container .process_boxes .process_icon:hover{
+#our_development_process_container .process_boxes .process_icon:hover{
   transform: scale(1.5);
 }
 
-#our_design_process_container .process_boxes .process_name{
+#our_development_process_container .process_boxes .process_name{
   font-family:  led_counter_7;
   font-weight: 500;
    font-size: clamp(1.5vmin, calc(1.5em + 1vmin), 1.5vmax);
    color: #ffffff;
 }
-#our_design_process_container .process_boxes .process_description{
+#our_development_process_container .process_boxes .process_description{
   font-family:  google_sans;
   font-size: clamp(1vmin, calc(1em + 1vmin), 1vmax);
   color: #858585;
