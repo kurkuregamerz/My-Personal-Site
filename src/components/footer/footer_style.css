@@ -17,6 +17,7 @@
   grid-template-rows: 9fr 1fr ;
  
   min-height: fit-content;
+  overflow-x: hidden;
 }
 #owner_name {
   font-family: valorant;
