@@ -128,7 +128,7 @@
   min-height: fit-content;
   grid-gap: 1vmax;
 }
-#about_me_container_main #text_ability_owner_main {
+#about_me_container_main #largetext_about_owner_main{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -140,22 +140,8 @@
   color: var(--theme-secondary-color);
 }
 
-#text_ability_owner_main span {
-  padding-right: 1vmax;
-  animation-duration: 1s;
-  transform: scale(1.2);
 
-  opacity: 20%;
-  animation-fill-mode: forwards;
-
-  animation-range: cover;
-}
-
-#about_me_container_main .about_owner_main_text {
-  font-size: clamp(2vmax, calc(5vmin + 1vmax), 20vmax);
-  font-family: inter_semibold;
-  text-transform: uppercase;
-}
+#about_me_container_main 
 #about_me_container_main #highlight_text {
   color: rgb(189, 189, 189);
 }
@@ -326,9 +312,6 @@
   animation-fill-mode: forwards;
   animation-range: cover;
   text-transform: uppercase;
-  font-size: clamp(2vmax, calc(5vmin + 1vmax), 20vmax);
-  font-family: inter_semibold;
-  text-transform: uppercase;
 }
 #our_services_container_main #service1 {
   border-top: 1px solid black;
@@ -448,7 +431,7 @@
   text-transform: uppercase;
   font-size: clamp(2vmax, calc(5vmin + 1vmax), 20vmax);
   font-family: inter_semibold;
-  text-transform: uppercase;
+
 }
 
 .our_services_container_main_item {
@@ -523,6 +506,101 @@
   font-weight: 400;
   border-top: 1px solid rgb(119, 119, 119);
 }
+#our_design_process_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows:1fr 2fr 3fr;
+  height: 40vh;
+  min-height: fit-content;
+  width: 90vw;
+  position: relative;
+  row-gap: 5vh;
+  padding: 5vw;
+
+}
+#largetext_our_design_process_container_main{
+  grid-column: 1/6;
+  justify-content: center;
+  align-items: center;
+  
+}
+#section_design_process_marking{
+  justify-self: center;
+  grid-column: 1/6;
+}
+#our_design_process_container ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  max-width: fit-content;
+  grid-column: 1/6;
+  gap: 1em;
+  justify-content: center;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  justify-self: center;
+  flex-wrap: wrap;
+  
+}
+#our_design_process_container .process_boxes{
+  min-width: 10em;
+  min-height: 15em;
+  width: 10vw;
+  height: 13vw;
+  padding: 2vw;
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:2fr 5fr 4fr ;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-range: cover;
+  justify-content: center;
+   transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+}
+#our_design_process_container .process_boxes .process_icon{
+  width: 2vmax;
+  height: 2vmax;
+  background-color: transparent;
+  border-radius: 2vmax;
+  font-family:  valorant;
+  font-weight: 500;
+   font-size: clamp(1.5vmin, calc(1.5em + 1vmin), 1.5vmax);
+   color: #ffffff;
+  display: flex;
+  justify-self: left;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  filter: drop-shadow(10px 4px 4px var(--theme-accent-color));
+   transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#our_design_process_container .process_boxes .process_icon:hover{
+  transform: scale(1.5);
+}
+
+#our_design_process_container .process_boxes .process_name{
+  font-family:  led_counter_7;
+  font-weight: 500;
+   font-size: clamp(1.5vmin, calc(1.5em + 1vmin), 1.5vmax);
+   color: #ffffff;
+}
+#our_design_process_container .process_boxes .process_description{
+  font-family:  google_sans;
+  font-size: clamp(1vmin, calc(1em + 1vmin), 1vmax);
+  color: #858585;
+}
+.process_boxes_reveal_animation_applied{
+  animation-name: process_boxes_reveal_animation;
+  animation-fill-mode: forwards;
+}
+.animated_process_boxes{
+  transform: translateY(20vh);
+  
+}
+
 @media screen and (orientation: portrait) and (max-width: 100vh) {
   #hero_section_main {
     width: 100%;
@@ -553,7 +631,7 @@
     align-self: last baseline;
     font-size: 10vmax;
   }
-  #text_ability_owner_main span {
+  #largetext_about_owner_main span {
     text-align: center;
     text-align-last: center;
   }
@@ -592,7 +670,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 2fr 1fr 2fr;
   }
-  #text_ability_owner_main {
+  #largetext_about_owner_main {
     grid-area: 1/1/2/2;
     text-align: center;
     text-align-last: center;
@@ -686,5 +764,13 @@
   to {
     opacity: 100%;
     transform: scale(1);
+  }
+}
+@keyframes process_boxes_reveal_animation {
+  from{
+    transform:translateY(20vh);
+  }
+  to{
+    transform: translateY(0);
   }
 }

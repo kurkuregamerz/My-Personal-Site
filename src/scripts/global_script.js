@@ -17,7 +17,7 @@ footer_creator();
 
 window.addEventListener("DOMContentLoaded", () => {
 setTimeout(() => {
-        scroll_single_time_animation_applier(document.querySelectorAll("#footer_main *"), "footer_reveal_from_bottom_applied", {
+        scroll_single_time_animation_applier(document.querySelectorAll("#footer_main *:not(.scroll_animation_excluded_footer_main)"), "footer_reveal_from_bottom_applied", {
     root: null,
     threshold: 0.1,
     rootMargin: `0px`

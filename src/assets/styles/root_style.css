@@ -7,7 +7,7 @@
     #f75402 91%,
     #f86700 100%
   );
-  --theme-accent-color: #d84603;
+  --theme-accent-color: #e64a02;
 }
 * {
   margin: 0;
@@ -43,7 +43,7 @@ a {
 }
 .section_name_marking {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
   align-content: center;
   border-radius: 2vmax;
@@ -55,12 +55,16 @@ a {
   width: 4vmax;
   height: 2vmax;
   min-width: fit-content;
+  column-gap: 1em;
+  max-width: fit-content;
 }
 .bulleting_logo {
+ 
   width: 2vmax;
   height: 2vmax;
   background-color: var(--theme-accent-color);
   border-radius: 2vmax;
+  justify-self: center;
 }
 .listing_number .item_number {
   font-family: monserrat;
@@ -69,6 +73,11 @@ a {
   padding-right: 1em;
   margin-left: 1em;
   padding-left: 1em;
+}
+.section_name{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
 }
 .bullet_point {
   background-color: var(--theme-accent-color);
@@ -109,6 +118,25 @@ a {
   width: 2vmax;
   grid-column: 1;
 }
+.largetext_main{
+  display: flex;
+  font-size: clamp(2vmax, calc(5vmin + 1vmax), 20vmax);
+  font-family: inter_semibold;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+
+}
+.largetext_main span {
+  padding-right: 1vmax;
+  animation-duration: 1s;
+  transform: scale(1.2);
+  color: grey;
+  opacity: 20%;
+  animation-fill-mode: forwards;
+
+  animation-range: cover;
+}
+
 @font-face {
   font-family: valorant;
   src: url(../fonts/Valorant/VALORANT_Font/Valorant_Font.ttf);
