@@ -18,6 +18,8 @@
  
   min-height: fit-content;
   overflow-x: hidden;
+  max-height: fit-content;
+  overflow-y: hidden;
 }
 #owner_name {
   font-family: valorant;

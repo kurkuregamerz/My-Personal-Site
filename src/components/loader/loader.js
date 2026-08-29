@@ -73,7 +73,7 @@ async function loader_exit_line_dots() {
   loader_main.style.animationName = "loader_exit";
   setTimeout(() => {
     loader.style.display = "none";
-  }, 1500);
+  }, 400);
 }
 
   loader_loading_dots_color_changer();

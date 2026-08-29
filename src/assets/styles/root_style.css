@@ -46,7 +46,7 @@ a {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   align-content: center;
-  border-radius: 2vmax;
+  /* border-radius: 2vmax; */
   padding: 1vmin;
   font-family: monserrat;
   font-weight: 600;
@@ -63,7 +63,7 @@ a {
   width: 2vmax;
   height: 2vmax;
   background-color: var(--theme-accent-color);
-  border-radius: 2vmax;
+  /* border-radius: 2vmax; */
   justify-self: center;
 }
 .listing_number .item_number {
@@ -124,7 +124,8 @@ a {
   font-family: inter_semibold;
   text-transform: uppercase;
   flex-wrap: wrap;
-
+  justify-content: left;
+  align-content: first baseline;
 }
 .largetext_main span {
   padding-right: 1vmax;
@@ -192,7 +193,30 @@ a {
     opacity: 100%;
   }
 }
-
+@keyframes left_to_right_entry_animation {
+  from{
+    transform: translateX(-30vw);
+  }
+  to{
+    transform: translateX(0vw);
+  }
+}
+@keyframes right_to_left_entry_animation {
+  from{
+    transform: translateX(30vw);
+  }
+  to{
+    transform: translateX(0vw);
+  }
+}
+.right_to_left_entry_animation_applied_elements{
+  animation-name: right_to_left_entry_animation;
+  animation-fill-mode: forwards;
+}
+.left_to_right_entry_animation_applied_elements{
+  animation-name: left_to_right_entry_animation ;
+  animation-fill-mode: forwards;
+}
 .large_to_normal_slick_entry_applied_elements {
   animation-name: large_to_normal_slick_entry;
   animation-fill-mode: forwards;

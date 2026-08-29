@@ -13,6 +13,7 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   align-items: center;
+  z-index: 2000000;
 }
 #loader {
   background-color: transparent;

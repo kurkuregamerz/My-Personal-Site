@@ -3,7 +3,10 @@ import {
     footer_creator
 } from "../components/footer/footer_exporter.js";
 import { text_adder } from "../components/blocked_text_adder/text_adder.js";
-import {scroll_single_time_animation_applier } from "../components/scroll_single_time_animation_applier/scroll_single_time_animation_applier_exporter.js"
+import { scroll_single_time_animation_applier } from "../components/scroll_single_time_animation_applier/scroll_single_time_animation_applier_exporter.js"
+import {
+  zero_to_target_number
+} from "../components/zero_to_target_number_single_time_animation/zero_to_target_number_single_time_animation.js"
 const main = document.getElementById("main");
 const head = document.head;
 document.head.innerHTML += `<link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">`;
