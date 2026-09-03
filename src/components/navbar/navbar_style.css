@@ -2,14 +2,15 @@
   position:absolute;
   top: 0px;
   height:50vh;
-
-  background-color: var(--theme-primary-gradient);
+  width: 100vw;
+  
   display: grid;
   grid-template-rows: 1fr 9fr;
   grid-template-columns:1fr ;
   grid-column: 1/6;
   grid-row: 1/65;
   justify-content: center;
+  justify-self: left;
   align-self: center;
   align-items: center;
   animation-duration: 1.5s;
@@ -19,9 +20,11 @@
   animation-range: entry 0% entry 100%;
   animation-delay: 0.2s;
   z-index: 1000;
+  
 }
 
-#navbar_main ul {
+#navbar_main>ul {
+  justify-self: center;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -33,8 +36,11 @@
    font-size: clamp(1vmax,calc(0.8vmin + 0.5vmax),2vmax);
   grid-row: 1;
   overflow-x:auto;
+  height: 100%;
+  background: var(--theme-primary-gradient);
+  width: 100%;
 }
-#navbar_main ul a {
+#navbar_main>ul a {
   list-style: none;
   display: flex;
   justify-content:flex-start;
@@ -98,8 +104,8 @@
   align-items: center;
   border-radius: 1vmax;
   display: none;
-  width: 100%;
-  grid-row: 2/3;
+  width: 75vw;
+  grid-row: 2;
   color: var(--theme-primary-color);
   font-family: inter_semibold;
   grid-template-columns: 3fr 2fr;
@@ -142,7 +148,7 @@
 
 #contact_info_nav_dropdown div{
    display: block;
-   font-size:x-small;
+   font-size:clamp(0.2vmin,calc(0.1em + 0.5vmax),0.5em);
    color: #838383;
 }
 #contact_info_nav_dropdown a {
@@ -185,6 +191,7 @@
   }
   #navbar_main ul {
      font-size: clamp(1vmax,calc(1.5vmin + 0.5vmax),2vmax);
+     
   }
   #navbar_logo_text {
   font-size: clamp(1vmax,calc(2vmin + 1vmax),3vmax);
@@ -192,7 +199,7 @@
 }
 @media screen and (orientation: portrait) and (max-width:80vh){
   #navbar_main{
-    width: 95vw;
+    width: 100vw;
     overflow-x: scroll;
     justify-content: left;
     justify-items: left;
@@ -216,7 +223,7 @@
     row-gap: 0.8vmax;
   }
    #dropdown_menu_navbar{
-  
+   
      height: 100vh;
   }
 

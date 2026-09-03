@@ -24,25 +24,25 @@ export function navbar_creator() {
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="">HOME</a>
+                <a href="./home_page.html">HOME</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="">ABOUT</a>
+                <a href="./about_page.html">ABOUT</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="">SERVICES</a>
+                <a href="./services_page.html">SERVICES</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="">CONTACT</a>
+                <a href="./contact_page.html">CONTACT</a>
               </li>
             </ul>
           </div>

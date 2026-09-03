@@ -23,7 +23,7 @@ const translations = [
   "Merhaba, ben",
   "Xin chao, toi la",
   "Hello, I am",  
-  "ISHAN",
+  
 ];
 
 
@@ -46,7 +46,7 @@ const observerCallback = async (mutationsList) => {
     document.getElementById("hello_container").innerHTML = translations[i];
     await sleep(120);
     
-    console.log(i)
+    
         }
         await sleep(100)
   document.getElementById("main").style.display = "block";
@@ -100,10 +100,12 @@ text_adder(
   document.getElementById("largetext_why_choose_me_container_main"),
   "Delivering sites with best results",
 );
+
 scroll_single_time_animation_applier(
   document.querySelectorAll(".largetext_main span"),
   "large_to_normal_slick_entry_applied_elements",
 );
+
 scroll_single_time_animation_applier(
   document.querySelectorAll(
     "#greeting_by_owner_and_about_about_owner_main span",
@@ -161,6 +163,10 @@ scroll_single_time_animation_applier(
   document.querySelectorAll("#developing_image_main"),
   "small_to_normal_image_animation_for_projects_containers_applied_elements",
 );
+scroll_single_time_animation_applier(
+  document.querySelectorAll("#form_and_name_container"),
+  "small_to_normal_image_animation_for_projects_containers_applied_elements",
+);
 
 const large_texts = document.querySelectorAll(".largetext_main");
 Array.from(large_texts).forEach((large_text) => {
@@ -177,7 +183,9 @@ Array.from(large_texts).forEach((large_text) => {
   });
   large_text.classList.remove("coloring");
 });
-
+Array.from(document.querySelectorAll("#largetext_reach_out_to_me_main span")).forEach(text => {
+  text.style.color = "#ffffff"
+});
 
 
   zero_to_target_number(
@@ -191,3 +199,4 @@ Array.from(large_texts).forEach((large_text) => {
     "%"
   );
   
+document.querySelector("#navbar_main>ul").style.background = "transparent";

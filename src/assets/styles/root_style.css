@@ -34,8 +34,20 @@ body {
   flex: 1 0 auto;
   min-height: 100dvh;
   height: fit-content;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--theme-primary-color);
+  overflow-y: auto;
+  scrollbar-color: var(--theme-accent-color);
+  display: block;
+  justify-items: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  z-index: 900;
+  
 }
-a {
+a,button {
   cursor: url(../icons/cursor_pointer_global.ico), default;
 }
 *::-webkit-scrollbar {

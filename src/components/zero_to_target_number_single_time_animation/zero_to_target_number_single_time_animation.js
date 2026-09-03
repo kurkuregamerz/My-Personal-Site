@@ -13,7 +13,7 @@ export function zero_to_target_number(element,  after_number) {
       if (entry.isIntersecting) {
         observer.unobserve(entry.target)
         const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-        console.log("Target container exist");
+        
         
         let target_number = parseInt(element[0].innerHTML) 
         let i = target_number - 30
