@@ -12,25 +12,25 @@ export function footer_creator() {
             class="pages_quicklink_footer_main"
           
           >
-            <a href="">Home</a>
+            <a href="./home_page.html">Home</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
             
           >
-            <a href="">About Me</a>
+            <a href="./about_page.html">About Me</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
             
           >
-            <a href="">Services</a>
+            <a href="./services_page.html">Services</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
         
           >
-            <a href="">Contact</a>
+            <a href="contact_page.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -41,19 +41,18 @@ export function footer_creator() {
             class="pages_quicklink_footer_main"
           
           >
-            <a href="">Instagram</a>
+            <a href="https://www.instagram.com/ishan.undefined?igsi=eGVmdmppbWR6MGk3">Instagram</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
-            
           >
-            <a href="">Linked in</a>
+            <a href="https://youtube.com/@bugged_reality_26?si=DFbC3Ejl65q0aAM">Youtube</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
            
           >
-            <a href="">Github</a>
+            <a href="https://github.com/kurkuregamerz/Introducing-myself">Github</a>
           </li>
         
         </ul>
