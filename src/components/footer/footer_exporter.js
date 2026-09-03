@@ -34,7 +34,7 @@ export function footer_creator() {
       <div id="contact_information_container_footer"><div id="phone_number_footer_contact_information_container">+91 7003555728</div><div id="email_footer_contact_information_container">crazyatozy@gmail.com</div></div>
       <form id="send_email_box_footer" method="POST" >
       Get in Touch
-      <input type="text" placeholder="Enter your message" name="email_footer" id="email_footer_contact_information_container_input" id="email_message_footer" required/><button id="send_button_email_footer">SEND YOUR MESSAGE</button></form>
+      <input type="text" placeholder="Enter your message" name="email_footer" id="email_footer_contact_information_container_input" required><button id="send_button_email_footer">SEND YOUR MESSAGE</button></form>
       <div id="navigation_footer">
         
         <ul id="navigation_pages_list_footer">
@@ -98,12 +98,12 @@ export function footer_creator() {
 
 
   
-  const message = document.getElementById("email_message_footer").innerText;
+  const message = document.getElementById("email_footer_contact_information_container_input").value;
 
 
   const body = encodeURIComponent(message);
 
-  window.location.href =
+    window.location.href =
       "mailto:crazyatozy@gmail.com?" + "body=" + body;
      console.log("mailto:crazyatozy@gmail.com?" + "body=" + body)
   });

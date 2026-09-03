@@ -339,7 +339,7 @@ textarea {
   }
   #reach_out_to_me_footer {
     padding: 1vmax;
-    height: 80vh;
+    height: 90vh;
     width: 70vw;
     grid-template-rows: 1fr 3fr;
   }
