@@ -97,14 +97,15 @@ export function footer_creator() {
     e.preventDefault()
 
 
-  
+    const email = "crazyatozy@gmail.com";
+    const subject = "Let's Connect!(Portfolio Enquiry)"
   const message = document.getElementById("email_footer_contact_information_container_input").value;
 
 
   const body = encodeURIComponent(message);
 
     window.location.href =
-      `https://mail.google.com/mail/?view=cm&fs=1&to=crazyatozy@gmail.com&su=Let's%20Connect!%20(Porfolio%20Enquiry)&body=${body}`;
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${body}`;
      
   });
 
