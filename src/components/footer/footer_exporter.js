@@ -104,8 +104,8 @@ export function footer_creator() {
   const body = encodeURIComponent(message);
 
     window.location.href =
-      "mailto:crazyatozy@gmail.com?" + "body=" + body;
-     console.log("mailto:crazyatozy@gmail.com?" + "body=" + body)
+      `https://mail.google.com/mail/?view=cm&fs=1&to=crazyatozy@gmail.com&su=Let's%20Connect!%20(Porfolio%20Enquiry)&body=${body}`;
+     
   });
 
  function text_adder(element, text) {
