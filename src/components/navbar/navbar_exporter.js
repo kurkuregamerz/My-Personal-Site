@@ -1,4 +1,5 @@
 export function navbar_creator() {
+
   let navbar = document.createElement("nav");
   navbar.setAttribute("id", "navbar_main")
   main.prepend(navbar)

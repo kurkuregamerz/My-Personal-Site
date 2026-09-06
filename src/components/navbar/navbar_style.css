@@ -39,6 +39,7 @@
   height: 100%;
   background: var(--theme-primary-gradient);
   width: 100%;
+  
 }
 #navbar_main>ul a {
   list-style: none;
@@ -53,6 +54,7 @@
   text-decoration-color: transparent;
   transition-duration: 0.1s;
  cursor: url("../../assets/icons/cursor_pointer_global.ico"), pointer;
+ 
 }
 
 #navbar_main li a:hover {

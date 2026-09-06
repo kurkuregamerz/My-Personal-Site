@@ -203,7 +203,7 @@
 #redirect_button_owners_social_media_card_hero_section button{
   height: 100%;
   width: 100%;
-  background-image: url(../../../public/images/component_images/icons8-instagram-logo-96.png);
+  background-image: url("../icons/icons8-instagram-logo-96.svg");
   border: 0;
   background-color: #f1f1f1;
   background-size: contain;
@@ -357,6 +357,7 @@
   padding-bottom: 5%;
   overflow-y: visible;
   min-height: fit-content;
+  
 }
 
 #our_services_container_main #largetext_our_services_container_main {
@@ -373,8 +374,9 @@
   color: var(--theme-secondary-color);
 }
 #our_services_container_main ul {
-  display: grid;
+  display: flex;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
   grid-row: 2;

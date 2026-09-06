@@ -90,6 +90,7 @@ a,button {
   display: flex;
   justify-self: center;
   justify-content: center;
+  
 }
 .bullet_point {
   background-color: var(--theme-accent-color);
