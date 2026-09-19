@@ -4,7 +4,8 @@ A personal portfolio website built to showcase my web development projects, skil
 
 ## Site Live at 
 <img width="100" height="100" alt="Screenshot 2026-09-06 142417" src="https://github.com/kurkuregamerz/My-Personal-Site/blob/main/public/images/favicon.ico" />
-<a href="https://www.ishankarardev.in">ishankarardev.in</a>
+
+### ishankarardev.in
 
 ## Project Preview
 <img width="1919" height="1079" alt="Screenshot 2026-09-06 142417" src="https://github.com/user-attachments/assets/e9b45896-7588-4d9d-9127-6193f4359f8c" />
