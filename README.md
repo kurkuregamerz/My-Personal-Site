@@ -3,7 +3,7 @@
 A personal portfolio website built to showcase my web development projects, skills, and background. 
 
 ## Site Live at 
-<img width="1919" height="1079" alt="Screenshot 2026-09-06 142417" src="https://github.com/kurkuregamerz/My-Personal-Site/blob/main/public/images/favicon.ico" />
+<img width="100" height="100" alt="Screenshot 2026-09-06 142417" src="https://github.com/kurkuregamerz/My-Personal-Site/blob/main/public/images/favicon.ico" />
 <a href="https://www.ishankarardev.in">ishankarardev.in</a>
 
 ## Project Preview
