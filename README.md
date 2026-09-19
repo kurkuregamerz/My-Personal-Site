@@ -2,6 +2,10 @@
 
 A personal portfolio website built to showcase my web development projects, skills, and background. 
 
+## Site Live at 
+<img width="1919" height="1079" alt="Screenshot 2026-09-06 142417" src="https://github.com/kurkuregamerz/My-Personal-Site/blob/main/public/images/favicon.ico" />
+<a href="https://www.ishankarardev.in">ishankarardev.in</a>
+
 ## Project Preview
 <img width="1919" height="1079" alt="Screenshot 2026-09-06 142417" src="https://github.com/user-attachments/assets/e9b45896-7588-4d9d-9127-6193f4359f8c" />
 <img width="1912" height="941" alt="Screenshot 2026-09-03 102811" src="https://github.com/user-attachments/assets/6a73e74e-7033-4dfd-bad8-08223b4eb18b" />
@@ -21,3 +25,4 @@ A personal portfolio website built to showcase my web development projects, skil
 * **HTML5** - Page structure and semantically organized content
 * **CSS3** - Custom layouts, styling, grids, and responsive design
 * **Vanilla JavaScript** - Interactivity and smooth navigation
+
