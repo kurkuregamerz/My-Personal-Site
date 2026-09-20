@@ -212,6 +212,7 @@
   
 }
 #owner_instagram_id_and_profession_container_owners_social_media_card_hero_section{
+  font-size: clamp(0.2vmin, calc(0.5vmin + 1em ), 0.8vmax);
   color: var(--theme-accent-color);
 }
 #about_me_container_main {
