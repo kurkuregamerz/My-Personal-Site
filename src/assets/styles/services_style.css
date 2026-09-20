@@ -56,7 +56,7 @@
   position: relative;
 }
 
-body:has(.service_in_cards_container_main:hover) .service_name{
+.service_in_cards_container_main:hover .service_name{
   color: var(--theme-accent-color);
 }
 .service_in_cards_container_main{

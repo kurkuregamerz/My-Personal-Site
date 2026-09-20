@@ -187,3 +187,18 @@ scroll_single_time_animation_applier(
     "+"
   );
 document.querySelector("#navbar_main>ul").style.background = "transparent";
+const large_texts = document.querySelectorAll(".largetext_main");
+Array.from(large_texts).forEach((large_text) => {
+  large_text.classList.add("coloring");
+  let large_text_span_array = document.querySelectorAll(".coloring span");
+  let i = 0;
+  large_text_span_array.forEach((large_text_span) => {
+    if (large_text_span_array.length / 2 < i) {
+      return;
+    }
+    large_text_span.style.color = "var(--theme-secondary-color)";
+
+    i = i + 1;
+  });
+  large_text.classList.remove("coloring");
+});
