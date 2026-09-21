@@ -40,7 +40,7 @@ async function loader_loading_dots_color_changer() {
   setTimeout(async () =>  loader_loading_dots_color_changer() , 800)
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   for (
-    index = 1;
+    let index = 1;
     index <=
     parseInt(
       Array.from(document.querySelectorAll(".loader_lines_dot")).length,

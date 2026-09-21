@@ -34,7 +34,7 @@ text_adder(
 );
 text_adder(
   document.getElementById("largetext_about_me_container_main"),
-  "Who am I Really?",
+  "My Expertise",
 );
 
 scroll_single_time_animation_applier(

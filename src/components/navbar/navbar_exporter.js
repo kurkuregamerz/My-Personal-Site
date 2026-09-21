@@ -6,10 +6,10 @@ export function navbar_creator() {
   navbar.innerHTML +=`
                 <ul class="navbar_navigation_buttons_box">
                     <li id="navbar_logo_text">Portfolio@</li>
-                    <li class="navbar_navigation_buttons" id="navbar_home_navigation_button" ><a href="./home_page.html">Home</a></li>
-                    <li class="navbar_navigation_buttons" id="navbar_about_navigation_button"><a href="./about_page.html">About</a></li>
-                    <li class="navbar_navigation_buttons" id="navbar_services_navigation_button"><a href="./services_page.html">Services</a></li>
-                    <li class="navbar_navigation_buttons" id="navbar_contact_navigation_button"><a href="./contact_page.html">Contact</a></li>
+                    <li class="navbar_navigation_buttons" id="navbar_home_navigation_button" ><a href="index.html">Home</a></li>
+                    <li class="navbar_navigation_buttons" id="navbar_about_navigation_button"><a href="/src/pages/about_page.html">About</a></li>
+                    <li class="navbar_navigation_buttons" id="navbar_services_navigation_button"><a href="/src/pages/services_page.html">Services</a></li>
+                    <li class="navbar_navigation_buttons" id="navbar_contact_navigation_button"><a href="/src/pages/contact_page.html">Contact</a></li>
                     <li class="navbar_navigation_buttons" id="navbar_navigation_menu_button">
                     <div class="navbar_menu_button_lines"id="navbar_menu_button_line1"></div>
                     <div class="navbar_menu_button_lines"id="navbar_menu_button_line2"></div>
@@ -25,25 +25,25 @@ export function navbar_creator() {
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="./home_page.html">HOME</a>
+                <a href="/index.html">HOME</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="./about_page.html">ABOUT</a>
+                <a href="/src/pages/about_page.html">ABOUT</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="./services_page.html">SERVICES</a>
+                <a href="/src/pages/services_page.html">SERVICES</a>
               </li>
               <li
                 class="pages_quicklink_section1_dropdown_nav"
                 id="page_quicklink_section1_dropdown_nav"
               >
-                <a href="./contact_page.html">CONTACT</a>
+                <a href="/src/pages/contact_page.html">CONTACT</a>
               </li>
             </ul>
           </div>

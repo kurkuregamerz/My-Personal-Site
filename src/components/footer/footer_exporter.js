@@ -43,25 +43,25 @@ export function footer_creator() {
             class="pages_quicklink_footer_main"
           
           >
-            <a href="./home_page.html">Home</a>
+            <a href="/index.html">Home</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
             
           >
-            <a href="./about_page.html">About Me</a>
+            <a href="/src/pages/about_page.html">About Me</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
             
           >
-            <a href="./services_page.html">Services</a>
+            <a href="/src/pages/services_page.html">Services</a>
           </li>
           <li
             class="pages_quicklink_footer_main"
         
           >
-            <a href="./contact_page.html">Contact</a>
+            <a href="/src/pages/contact_page.html">Contact</a>
           </li>
         </ul>
       </div>

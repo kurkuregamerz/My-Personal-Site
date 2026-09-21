@@ -303,7 +303,7 @@
 }
 #about_me_container_main {
   position: relative;
-  background-color: #131313;
+  background-color: #080808;
   height: 80vh;
 
   width: 80vw;
@@ -314,6 +314,72 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#expertise_container_about_me_container_main{
+    grid-row: 3/6;
+  grid-column: 2/5;
+  height: 100%;
+  width: 100%;
+}
+.expertise_card_about_me_container_main{
+   height: 12vmax;
+  width: 12vmax;
+}
+.progress_circle_container{
+  height: 12vmax;
+  width: 12vmax;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.circle_progress_svg_expertise_card{
+  fill: none;
+  height: 10vmax;
+  stroke: #ffffff;
+  width: 10vmax;
+  stroke-width: 20px;
+  stroke-dasharray: 470;
+   stroke-dashoffset:50 ;
+ grid-column: 1;
+ grid-row: 1;
+ z-index: 300;
+}
+.progressbar_circle{
+  height: 12vmax;
+  width: 12vmax;
+   grid-column: 1;
+ grid-row: 1;
+ z-index: 200;
+}
+.outer_circle{
+  height: 12vmax;
+  width: 12vmax;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.inner_circle{
+  height: 9vmax;
+  width: 9vmax;
+  border-radius: 50%;
+  border: 1px solid white;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+.inner_circle>.progress_bar_percentage{
+  color: #ffffff;
+  justify-self: center;
+  align-self: center;
+  font-family: google_sans;
+    font-size: clamp(1.5vmin, calc(1.5em + 1.5vmin), 1.5vmax);
 }
 #largetext_about_me_container_main {
   grid-row: 1/3;
