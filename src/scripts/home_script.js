@@ -16,7 +16,7 @@ else {
 }
 
 const head = document.head;
-head.innerHTML += `<link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">`;
+head.innerHTML += `<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">`;
 navbar_creator()
 
 
